@@ -8,62 +8,65 @@ const About = ({ id }) => {
           <p className="eyebrow">About Tiffany</p>
 
           <h1>
-            Building AI and technical fluency on top of a strong customer
-            support foundation.
+            Bringing customer support experience into technical and AI-adjacent work.
           </h1>
 
           <p>
-            With 7+ years of customer experience, I’ve supported global users
-            (80–110 inquiries per day), consistently maintaining 97–98% QA
-            quality in a high-volume English-language support environment.
+            I bring 7+ years of experience in high-volume, customer-facing
+            environments, where I diagnose user issues, navigate systems, and
+            deliver clear solutions.
           </p>
 
           <p>
-            While my current role does not formally involve AI, I actively
-            explore and apply AI tools outside of work. I build small projects,
-            experiment with prompts, and learn how AI can improve workflows,
-            communication, and user-facing experiences.
+            My strength lies in problem-solving and communication — I can
+            analyze issues, identify root causes, and explain complex situations
+            in simple, user-friendly language.
           </p>
 
           <p>
-            I’m currently transitioning into Customer Success, Technical
-            Support, Product Support, and AI-adjacent roles where I can combine
-            user understanding with growing technical and AI knowledge.
+            Alongside my professional experience, I am actively building AI and
+            technical skills through hands-on projects, including API integration,
+            prompt practice, and AI-powered applications.
+          </p>
+
+          <p>
+            I am now transitioning into customer-facing technical roles where I
+            can combine user understanding with growing expertise in AI, product
+            thinking, and system workflows.
           </p>
         </div>
       </div>
 
       <div className="about-grid">
         <div className="card">
-          <h3>Customer Experience</h3>
+          <h3>Issue Diagnosis</h3>
           <p>
-            7+ years supporting global users in English and Mandarin, handling
-            high-volume inquiries with strong accuracy and empathy.
-          </p>
-        </div>
-
-        <div className="card">
-          <h3>AI & Tech</h3>
-          <p>
-            Actively learning AI tools such as OpenAI, Claude, and Gemini
-            through personal projects, prompt practice, and hands-on
-            experimentation.
+            Experienced in analyzing user-reported issues, identifying possible
+            causes, and providing clear next steps.
           </p>
         </div>
 
         <div className="card">
           <h3>Communication</h3>
           <p>
-            Skilled at explaining complex concepts to non-technical users and
-            improving user understanding.
+            Skilled at translating complex processes into simple, user-friendly
+            explanations in English and Mandarin.
           </p>
         </div>
 
         <div className="card">
-          <h3>Efficiency</h3>
+          <h3>AI & Tech Learning</h3>
           <p>
-            Improved workflow efficiency by ~15% while maintaining consistent
-            97–98% QA quality.
+            Actively learning OpenAI, Claude, Gemini, API workflows, and modern
+            web technologies through personal projects.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>Support Quality</h3>
+          <p>
+            Handled high-volume support work while maintaining consistent
+            97–98% QA quality and improving workflow efficiency.
           </p>
         </div>
       </div>
@@ -71,16 +74,16 @@ const About = ({ id }) => {
       <div className="about-cta">
         <div className="cta-header">
           <p className="cta-eyebrow">Open to opportunities</p>
-          <h2>Customer-facing AI & Tech roles</h2>
+          <h2>Technical Support & Customer-facing Tech roles</h2>
         </div>
 
         <div className="cta-role-list">
-          <span>Customer Success</span>
           <span>Technical Support</span>
           <span>Product Support</span>
-          <span>AI Trainer</span>
+          <span>Customer Success</span>
           <span>AI Operations</span>
-          <span>Solutions Consultant</span>
+          <span>AI Support</span>
+          <span>Solutions Support</span>
         </div>
 
         <p className="cta-note">

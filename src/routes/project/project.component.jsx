@@ -11,15 +11,15 @@ const Projects = () => {
       sourceLink: null,
       tag: 'AI Learning Project',
       summary:
-        'An AI-powered tarot reading app in development, built as a personal project to practice OpenAI API integration, prompt design, and bilingual AI responses.',
+        'An AI-powered tarot reading app built as a personal project to practice OpenAI API integration, prompt design, and user-facing AI responses.',
       tools: ['React', 'OpenAI API', 'Prompt Design', 'JavaScript'],
       highlights: [
-        'Practicing prompt design for personalized AI-generated responses',
-        'Exploring bilingual English/Chinese AI interactions',
-        'Learning API integration and AI output refinement'
+        'Designed structured prompts for personalized AI-generated responses',
+        'Explored bilingual English/Chinese AI interaction patterns',
+        'Practiced API integration, debugging, and AI output refinement'
       ],
       learned:
-        'Shows how I am building AI fluency through hands-on experimentation with prompts, API integration, and user-facing AI responses.'
+        'This project shows how I am building AI fluency through hands-on experimentation with prompts, API workflows, and user-facing AI responses.'
     },
     {
       name: 'Artsync',
@@ -37,7 +37,7 @@ const Projects = () => {
         'Used testing tools to improve reliability'
       ],
       learned:
-        'Reflects my ability to structure a frontend project and explore how users navigate and interact with digital content.'
+        'This project reflects my ability to structure a frontend project and think through how users navigate and interact with digital content.'
     },
     {
       name: 'Bookflow',
@@ -47,15 +47,15 @@ const Projects = () => {
       sourceLink: 'https://github.com/yinjuchen/bookflow.git',
       tag: 'Backend Learning Project',
       summary:
-        'A book recommendation platform built to explore backend logic, external API integration, authentication, and database handling.',
+        'A backend-focused project exploring API integration, authentication, and database-driven user experiences.',
       tools: ['Node.js', 'PostgreSQL', 'Google Books API', 'Authentication'],
       highlights: [
-        'Built backend logic with Node.js and PostgreSQL',
-        'Integrated Google Books API for book data',
+        'Built backend logic using Node.js and PostgreSQL',
+        'Integrated Google Books API for external book data',
         'Implemented user authentication and data handling'
       ],
       learned:
-        'Demonstrates my learning in backend development, API integration, and handling user data and authentication.'
+        'This project demonstrates my learning in backend development, API integration, system flow, and handling user data.'
     },
     {
       name: 'SandWichology',
@@ -73,7 +73,7 @@ const Projects = () => {
         'Focused on simple, usable interface design'
       ],
       learned:
-        'Shows my foundation in JavaScript, UI interaction, and problem-solving through hands-on practice.'
+        'This project shows my foundation in JavaScript, UI interaction, and hands-on problem-solving.'
     }
   ]
 
@@ -83,14 +83,12 @@ const Projects = () => {
         <p className="eyebrow">Selected Projects</p>
 
         <h2>
-          Learning AI, APIs, and practical product-building through hands-on
-          projects.
+          Building technical confidence through AI, APIs, and practical projects.
         </h2>
 
         <p>
-          These projects reflect how I’m exploring AI tools, technical skills,
-          and product thinking through self-directed learning and
-          experimentation.
+          These projects reflect how I’m strengthening my technical foundation
+          through self-directed learning, debugging, API practice, and product thinking.
         </p>
       </div>
 
