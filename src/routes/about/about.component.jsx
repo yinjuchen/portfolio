@@ -1,34 +1,92 @@
 import './about.styles.scss'
 
-const About = ({id}) => {
+const About = ({ id }) => {
   return (
-    <div id={id} className="about-container">
-      <div className="about-1">
-        <div className='about-1-paragraph'>
-          <h1>My Journey</h1>
-          <h3>Motivation</h3>
-          <p>On a typical day in 2021, I stumbled upon Inoue Tomohisa's book, which painted a stark future of the economy potentially collapsing by 2030. The growing influence of AI and technology highlighted my career vulnerabilities—my skills were becoming obsolete. This realization was daunting and enlightening, pushing me toward a field that promised resilience: coding. Despite my initial lack of enthusiasm for coding, each problem solved and bug fixed brought a profound sense of accomplishment, steering me toward a path in the technology world.</p>
-        </div>
-        <img className="about-1-image" src="https://i.ibb.co/MgXxpHM/motivation1.png" alt="images"/>
-      </div>
-      <div className="about-2">
-        <div className='about-2-paragraph'>
-          <h3>Action</h3>
-          <p>Balancing a full-time job, I dedicated my weekends and evenings to mastering coding. I tackled various coding challenges, absorbed countless tutorials, and embarked on side projects that stretched my abilities. My first project, "Artsync," leveraged React's robust framework to build an online art gallery. Concurrently, I utilized only Vanilla JavaScript to create "Sandwichlogy," a simple yet effective recipe app. These projects refined my coding skills and enhanced my debugging and problem-solving techniques. 
-</p>
+    <section id={id} className="about-container">
+      <div className="about-hero">
+        <div className="about-text">
+          <p className="eyebrow">About Tiffany</p>
 
-     
+          <h1>
+            Bringing customer support experience into AI and technical environments.
+          </h1>
+
+          <p>
+            With 7+ years of customer experience, I’ve supported global users
+            (80–110 inquiries per day), consistently maintaining 97–98% QA quality
+            in a high-volume English-language support environment.
+          </p>
+
+          <p>
+            While my current role does not formally involve AI, I have been
+            actively learning and experimenting with AI tools through personal
+            projects. I’m AWS AI Practitioner certified and have hands-on
+            experience using OpenAI API, React, and modern web technologies.
+          </p>
+
+          <p>
+            I’m currently transitioning into Customer Success, Technical Support,
+            Product Support, and AI-adjacent roles where I can combine user
+            understanding with growing technical and AI knowledge.
+          </p>
         </div>
-        <img className="about-2-image" src="https://i.ibb.co/yh5Z30F/motivation.png" alt="images"/>
       </div>
-      <div className="about-3">
-        <div className='about-3-paragraph'>
-          <h3>Pursuit</h3>
-            <p>Armed with hands-on experience and a solid foundation in both front-end and back-end technologies, I am confident in delivering comprehensive and satisfying user experiences. I view every new project as a learning opportunity, always optimizing for best practices. I am eager to bring this proactive and continuous learning approach to your team, contributing not just technically but also with fresh, innovative ideas. Let's connect and discuss how I can contribute to your projects.</p>
+
+      <div className="about-grid">
+        <div className="card">
+          <h3>Customer Experience</h3>
+          <p>
+            7+ years supporting global users in English and Mandarin,
+            handling high-volume inquiries with strong accuracy and empathy.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>AI & Tech</h3>
+          <p>
+            Actively learning AI tools such as OpenAI, Claude, and Gemini through
+            personal projects and hands-on experimentation.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>Communication</h3>
+          <p>
+            Skilled at explaining complex concepts to non-technical users
+            and improving user understanding.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>Efficiency</h3>
+          <p>
+            Improved workflow efficiency by ~15% while maintaining
+            consistent 97–98% QA quality.
+          </p>
         </div>
       </div>
-    </div>
+
+      <div className="about-cta">
+        <div className="cta-header">
+          <p className="cta-eyebrow">Open to opportunities</p>
+          <h2>Customer-facing AI & Tech roles</h2>
+        </div>
+
+        <div className="cta-role-list">
+          <span>Customer Success</span>
+          <span>Technical Support</span>
+          <span>Product Support</span>
+          <span>AI Trainer</span>
+          <span>AI Operations</span>
+          <span>Solutions Consultant</span>
+        </div>
+
+        <p className="cta-note">
+          Open to remote, hybrid, and international opportunities.
+        </p>
+      </div>
+    </section>
   )
 }
 
-export default About 
+export default About
