@@ -11,15 +11,15 @@ const Projects = () => {
       sourceLink: null,
       tag: 'AI Learning Project',
       summary:
-        'An AI-powered tarot reading app currently in development, built as a personal project to explore bilingual AI interactions using OpenAI API.',
+        'An AI-powered tarot reading app in development, built as a personal project to practice OpenAI API integration, prompt design, and bilingual AI responses.',
       tools: ['React', 'OpenAI API', 'Prompt Design', 'JavaScript'],
       highlights: [
-        'Designed prompts for personalized AI-generated responses',
-        'Explored bilingual English/Chinese AI interactions',
-        'Practiced API integration and AI output refinement'
+        'Practicing prompt design for personalized AI-generated responses',
+        'Exploring bilingual English/Chinese AI interactions',
+        'Learning API integration and AI output refinement'
       ],
       learned:
-        'Shows how I am learning to design user-facing AI interactions and experiment with prompt design, API integration, and bilingual AI responses.'
+        'Shows how I am building AI fluency through hands-on experimentation with prompts, API integration, and user-facing AI responses.'
     },
     {
       name: 'Artsync',
@@ -83,12 +83,14 @@ const Projects = () => {
         <p className="eyebrow">Selected Projects</p>
 
         <h2>
-          Learning AI, APIs, and building practical product experiences.
+          Learning AI, APIs, and practical product-building through hands-on
+          projects.
         </h2>
 
         <p>
           These projects reflect how I’m exploring AI tools, technical skills,
-          and product thinking through hands-on experimentation.
+          and product thinking through self-directed learning and
+          experimentation.
         </p>
       </div>
 

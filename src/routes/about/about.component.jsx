@@ -8,26 +8,27 @@ const About = ({ id }) => {
           <p className="eyebrow">About Tiffany</p>
 
           <h1>
-            Bringing customer support experience into AI and technical environments.
+            Building AI and technical fluency on top of a strong customer
+            support foundation.
           </h1>
 
           <p>
             With 7+ years of customer experience, I’ve supported global users
-            (80–110 inquiries per day), consistently maintaining 97–98% QA quality
-            in a high-volume English-language support environment.
+            (80–110 inquiries per day), consistently maintaining 97–98% QA
+            quality in a high-volume English-language support environment.
           </p>
 
           <p>
-            While my current role does not formally involve AI, I have been
-            actively learning and experimenting with AI tools through personal
-            projects. I’m AWS AI Practitioner certified and have hands-on
-            experience using OpenAI API, React, and modern web technologies.
+            While my current role does not formally involve AI, I actively
+            explore and apply AI tools outside of work. I build small projects,
+            experiment with prompts, and learn how AI can improve workflows,
+            communication, and user-facing experiences.
           </p>
 
           <p>
-            I’m currently transitioning into Customer Success, Technical Support,
-            Product Support, and AI-adjacent roles where I can combine user
-            understanding with growing technical and AI knowledge.
+            I’m currently transitioning into Customer Success, Technical
+            Support, Product Support, and AI-adjacent roles where I can combine
+            user understanding with growing technical and AI knowledge.
           </p>
         </div>
       </div>
@@ -36,32 +37,33 @@ const About = ({ id }) => {
         <div className="card">
           <h3>Customer Experience</h3>
           <p>
-            7+ years supporting global users in English and Mandarin,
-            handling high-volume inquiries with strong accuracy and empathy.
+            7+ years supporting global users in English and Mandarin, handling
+            high-volume inquiries with strong accuracy and empathy.
           </p>
         </div>
 
         <div className="card">
           <h3>AI & Tech</h3>
           <p>
-            Actively learning AI tools such as OpenAI, Claude, and Gemini through
-            personal projects and hands-on experimentation.
+            Actively learning AI tools such as OpenAI, Claude, and Gemini
+            through personal projects, prompt practice, and hands-on
+            experimentation.
           </p>
         </div>
 
         <div className="card">
           <h3>Communication</h3>
           <p>
-            Skilled at explaining complex concepts to non-technical users
-            and improving user understanding.
+            Skilled at explaining complex concepts to non-technical users and
+            improving user understanding.
           </p>
         </div>
 
         <div className="card">
           <h3>Efficiency</h3>
           <p>
-            Improved workflow efficiency by ~15% while maintaining
-            consistent 97–98% QA quality.
+            Improved workflow efficiency by ~15% while maintaining consistent
+            97–98% QA quality.
           </p>
         </div>
       </div>
