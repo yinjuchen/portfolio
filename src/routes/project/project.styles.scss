@@ -30,13 +30,42 @@
 }
 
 .projects-header p {
-  max-width: 680px;
+  max-width: 720px;
   margin: 28px auto 0;
   font-size: 1.1rem;
   line-height: 1.7;
   color: #333;
 }
 
+/* WORK SECTIONS */
+.work-section {
+  max-width: 1200px;
+  margin: 0 auto 96px;
+}
+
+.work-section-header {
+  margin-bottom: 32px;
+}
+
+.work-section-header .eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5f63ff;
+}
+
+.work-section-header h3 {
+  max-width: 760px;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+/* PROJECT GRID */
 .project-container {
   width: 100%;
   max-width: 1180px;
@@ -50,30 +79,46 @@
   min-width: 0;
 }
 
+/* FEATURED CASE STUDY */
 .project-detail-container.featured {
   grid-column: 1 / -1;
 }
 
 .project-detail-container.featured .project-card-container {
-  display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: 42px;
-  padding: 34px;
-}
-
-.project-detail-container.featured .project-image-wrapper img {
-  height: 100%;
-  min-height: 420px;
+  padding: 48px;
 }
 
 .project-detail-container.featured .project-content {
-  margin-top: 0;
+  max-width: 760px;
 }
 
 .project-detail-container.featured .project-name {
-  font-size: clamp(3rem, 5vw, 5rem);
+  max-width: 740px;
+  font-size: clamp(3.4rem, 6vw, 6rem);
 }
 
+.project-detail-container.featured .project-summary {
+  max-width: 720px;
+  font-size: 1.1rem;
+}
+
+/* If a featured card has an image in the future */
+.project-detail-container.featured .project-image-wrapper {
+  height: 420px;
+  margin-bottom: 36px;
+}
+
+/* REGULAR PROJECT CARDS */
+.project-detail-container:not(.featured) .project-name {
+  font-size: 2rem;
+}
+
+/* Learning projects should all stay equal-size cards */
+.learning-projects .project-detail-container.featured {
+  grid-column: auto;
+}
+
+/* RESPONSIVE */
 @media (max-width: 850px) {
   .projects {
     padding: 88px 6% 56px;
@@ -88,19 +133,33 @@
     margin-left: 0;
   }
 
+  .work-section {
+    margin-bottom: 72px;
+  }
+
   .project-container {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
   .project-detail-container.featured .project-card-container {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
+    padding: 28px;
   }
 
-  .project-detail-container.featured .project-image-wrapper img {
+  .project-detail-container.featured .project-content {
+    max-width: 100%;
+  }
+
+  .project-detail-container.featured .project-name {
+    font-size: clamp(2.6rem, 12vw, 4.2rem);
+  }
+
+  .project-detail-container.featured .project-summary {
+    font-size: 1rem;
+  }
+
+  .project-detail-container.featured .project-image-wrapper {
     height: 260px;
-    min-height: 260px;
+    margin-bottom: 28px;
   }
 }

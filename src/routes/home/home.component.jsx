@@ -8,12 +8,11 @@ const Home = () => {
         <p className="eyebrow">Customer Experience · Technical Support · AI Learning</p>
 
         <h1>
-          Customer-facing problem solver moving into AI and technical roles.
+          Customer Support Specialist Moving into Technical Support, AI QA, and AI Support Operations.
         </h1>
 
         <p className="hero-text">
-          7+ years in high-volume support. Strong in diagnosing issues,
-          explaining systems clearly, and delivering practical solutions.
+          7+ years in high-volume text-based support, with strengths in issue diagnosis, structured written communication, support quality, and AI-assisted workflow learning.
         </p>
       </section>
 

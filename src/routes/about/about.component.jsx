@@ -8,31 +8,23 @@ const About = ({ id }) => {
           <p className="eyebrow">About Tiffany</p>
 
           <h1>
-            Bringing customer support experience into technical and AI-adjacent work.
+            Bringing customer support experience into Technical Support, AI QA, and Support Automation.
           </h1>
 
           <p>
-            I bring 7+ years of experience in high-volume, customer-facing
-            environments, where I diagnose user issues, navigate systems, and
-            deliver clear solutions.
+            I’m a text-based Customer Support Specialist with 7+ years of experience helping global users solve problems through clear, structured written communication.
           </p>
 
           <p>
-            My strength lies in problem-solving and communication — I can
-            analyze issues, identify root causes, and explain complex situations
-            in simple, user-friendly language.
+            In my current role, I handle high-volume customer inquiries, diagnose user issues, navigate internal systems, and provide actionable solutions while maintaining 97–98% quality and improving efficiency by 15%.
           </p>
 
           <p>
-            Alongside my professional experience, I am actively building AI and
-            technical skills through hands-on projects, including API integration,
-            prompt practice, and AI-powered applications.
+            I’m now transitioning toward Technical Support, Product Support, AI QA, and AI Support Operations roles, where I can combine my support experience with growing skills in AI tools, troubleshooting, documentation, and technical problem-solving.
           </p>
 
           <p>
-            I am now transitioning into customer-facing technical roles where I
-            can combine user understanding with growing expertise in AI, product
-            thinking, and system workflows.
+            My current focus is building hands-on projects around prompt testing, AI response evaluation, knowledge base improvement, support workflow optimization, and customer-facing product support.
           </p>
         </div>
       </div>
@@ -41,13 +33,12 @@ const About = ({ id }) => {
         <div className="card">
           <h3>Issue Diagnosis</h3>
           <p>
-            Experienced in analyzing user-reported issues, identifying possible
-            causes, and providing clear next steps.
+            Experienced in analyzing user-reported issues, identifying patterns, asking clarifying questions, and providing clear next steps.
           </p>
         </div>
 
         <div className="card">
-          <h3>Communication</h3>
+          <h3>Support Communication</h3>
           <p>
             Skilled at translating complex processes into simple, user-friendly
             explanations in English and Mandarin.
@@ -55,18 +46,16 @@ const About = ({ id }) => {
         </div>
 
         <div className="card">
-          <h3>AI & Tech Learning</h3>
+          <h3>AI QA & Tech Learning</h3>
           <p>
-            Actively learning OpenAI, Claude, Gemini, API workflows, and modern
-            web technologies through personal projects.
+            Practicing AI response evaluation, prompt refinement, hallucination checking, and support scenario testing.
           </p>
         </div>
 
         <div className="card">
-          <h3>Support Quality</h3>
+          <h3>Support Quality & Operation</h3>
           <p>
-            Handled high-volume support work while maintaining consistent
-            97–98% QA quality and improving workflow efficiency.
+            Experienced in high-volume written support with a focus on consistency, accuracy, QA quality, and workflow improvement.
           </p>
         </div>
       </div>
@@ -80,10 +69,10 @@ const About = ({ id }) => {
         <div className="cta-role-list">
           <span>Technical Support</span>
           <span>Product Support</span>
-          <span>Customer Success</span>
-          <span>AI Operations</span>
-          <span>AI Support</span>
-          <span>Solutions Support</span>
+          <span>AI QA</span>
+          <span>Prompt Tester</span>
+          <span>Support Automation</span>
+          <span>AI Support Operations</span>
         </div>
 
         <p className="cta-note">

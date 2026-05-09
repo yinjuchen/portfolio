@@ -4,46 +4,104 @@ import './project.styles.scss'
 const Projects = () => {
   const projectData = [
     {
+      name: 'Support Ticket Analysis & Triage',
+      status: 'Case Study',
+      imageUrl: null,
+      projectLink: '/projects/support-ticket-analysis',
+      sourceLink: null,
+      tag: 'Support Operations Case Study',
+      summary:
+        'A self-initiated support operations case study using simulated customer tickets to demonstrate issue categorization, user intent analysis, triage logic, and documentation improvement.',
+      tools: [
+        'Customer Support',
+        'Ticket Triage',
+        'Product Support',
+        'Documentation',
+        'QA Thinking'
+      ],
+      highlights: [
+        'Created sample support tickets based on realistic customer scenarios',
+        'Categorized issues by user intent, urgency, and product area',
+        'Identified repeated questions and possible root causes',
+        'Proposed FAQ, macro, and escalation improvements'
+      ],
+      learned:
+        'This project demonstrates how my text-based support experience can translate into structured issue diagnosis, product feedback, and support operations improvement.'
+    },
+    {
+      name: 'AI Support Response Review & Follow-up Handling',
+      status: 'Case Study',
+      imageUrl: null,
+      projectLink: '/projects/ai-support-response-review',
+      sourceLink: null,
+      tag: 'AI Support QA Case Study',
+      summary:
+        'A self-initiated case study reviewing sample AI-style support replies and writing human follow-up responses when the AI reply is unclear, incomplete, or not empathetic enough.',
+      tools: [
+        'AI Reply Review',
+        'Customer Support',
+        'Follow-up Writing',
+        'Escalation Awareness',
+        'Response QA'
+      ],
+      highlights: [
+        'Reviewed AI-style support replies across common customer scenarios',
+        'Identified unclear, incomplete, or risky AI responses',
+        'Wrote human follow-up replies to clarify, apologize, or escalate',
+        'Defined simple review criteria for AI-assisted support conversations'
+      ],
+      learned:
+        'This project shows how my text-based support experience can support AI-assisted customer service by reviewing AI replies and improving the customer follow-up experience.'
+    },
+    {
+      name: 'AI-Assisted Support Workflow Design',
+      status: 'Case Study',
+      imageUrl: null,
+      projectLink: '/projects/ai-assisted-support-workflow',
+      sourceLink: null,
+      tag: 'AI Support Operations Case Study',
+      summary:
+        'A self-initiated case study mapping how AI-assisted draft replies, human review checkpoints, escalation rules, and knowledge base updates can support safer customer service workflows.',
+      tools: [
+        'Support Workflow',
+        'Human Review',
+        'Escalation Rules',
+        'AI-Assisted Support',
+        'Knowledge Base'
+      ],
+      highlights: [
+        'Mapped a simple AI-assisted support workflow from ticket intake to resolution',
+        'Defined when AI draft replies can help and when human review is required',
+        'Created escalation rules for billing, privacy, account access, and technical issues',
+        'Added a knowledge base feedback loop for repeated customer questions'
+      ],
+      learned:
+        'This project shows how I think about using AI as support assistance while keeping human judgment, escalation, and documentation quality in the workflow.'
+    },
+    {
       name: 'AI Tarot App',
-      status: 'In Progress',
+      status: 'AI Practice Project',
       imageUrl: 'https://i.ibb.co/LYyWkJJ/artsync.webp',
       projectLink: null,
       sourceLink: null,
       tag: 'AI Learning Project',
       summary:
-        'An AI-powered tarot reading app built as a personal project to practice OpenAI API integration, prompt design, and user-facing AI responses.',
+        'A user-facing AI app exploring prompt design, OpenAI API integration, bilingual response design, and AI output refinement.',
       tools: ['React', 'OpenAI API', 'Prompt Design', 'JavaScript'],
       highlights: [
-        'Designed structured prompts for personalized AI-generated responses',
-        'Explored bilingual English/Chinese AI interaction patterns',
-        'Practiced API integration, debugging, and AI output refinement'
+        'Designed structured prompts for consistent AI-generated responses',
+        'Explored bilingual English/Chinese interaction patterns',
+        'Practiced API integration, debugging, and response handling',
+        'Refined AI output for clarity, tone, and user experience'
       ],
       learned:
-        'This project shows how I am building AI fluency through hands-on experimentation with prompts, API workflows, and user-facing AI responses.'
-    },
-    {
-      name: 'Artsync',
-      status: 'Live',
-      imageUrl: 'https://i.ibb.co/LYyWkJJ/artsync.webp',
-      projectLink: 'https://artsync.netlify.app/',
-      sourceLink: 'https://github.com/yinjuchen/artsync.git',
-      tag: 'Frontend Learning Project',
-      summary:
-        'A virtual art gallery built to practice frontend structure, navigation flow, and user-facing digital experiences.',
-      tools: ['React', 'Firebase', 'React Router', 'Cypress'],
-      highlights: [
-        'Built a structured frontend experience using React',
-        'Designed navigation flow for browsing art content',
-        'Used testing tools to improve reliability'
-      ],
-      learned:
-        'This project reflects my ability to structure a frontend project and think through how users navigate and interact with digital content.'
+        'This project helped me understand how prompt structure, response quality, and user-facing AI behavior affect the overall product experience.'
     },
     {
       name: 'Bookflow',
-      status: 'Code Only / Demo under maintenance',
+      status: 'live',
       imageUrl: 'https://i.ibb.co/PMvXnYy/bookflow.webp',
-      projectLink: null,
+      projectLink: 'https://bookflow-fbcg.onrender.com/',
       sourceLink: 'https://github.com/yinjuchen/bookflow.git',
       tag: 'Backend Learning Project',
       summary:
@@ -58,6 +116,24 @@ const Projects = () => {
         'This project demonstrates my learning in backend development, API integration, system flow, and handling user data.'
     },
     {
+      name: 'Artsync',
+      status: 'Live',
+      imageUrl: 'https://i.ibb.co/LYyWkJJ/artsync.webp',
+      projectLink: 'https://artsync.netlify.app/',
+      sourceLink: 'https://github.com/yinjuchen/artsync.git',
+      tag: 'Frontend Learning Project',
+      summary:
+        'A frontend project focused on navigation flow, user interaction, and interface testing for a content-browsing experience.',
+      tools: ['React', 'Firebase', 'React Router', 'Cypress'],
+      highlights: [
+        'Built a structured frontend experience using React',
+        'Designed navigation flow for browsing art content',
+        'Used testing tools to improve reliability'
+      ],
+      learned:
+        'This project reflects my ability to structure a frontend project and think through how users navigate and interact with digital content.'
+    },
+    {
       name: 'SandWichology',
       status: 'Live',
       imageUrl: 'https://i.ibb.co/fdKgbgs/sandwich.webp',
@@ -65,7 +141,7 @@ const Projects = () => {
       sourceLink: 'https://github.com/yinjuchen/sandwichology.git',
       tag: 'JavaScript Practice Project',
       summary:
-        'A simple recipe app built with Vanilla JavaScript to practice interactive UI logic and frontend fundamentals.',
+        'A vanilla JavaScript project practicing DOM manipulation, state logic, and simple user interaction patterns.',
       tools: ['HTML', 'CSS', 'JavaScript'],
       highlights: [
         'Built interactive UI without a framework',
@@ -77,32 +153,67 @@ const Projects = () => {
     }
   ]
 
+  const caseStudies = projectData.filter(
+    (project) => project.status === 'Case Study'
+  )
+
+  const learningProjects = projectData.filter(
+    (project) => project.status !== 'Case Study'
+  )
+
   return (
     <section className="projects">
       <div className="projects-header">
-        <p className="eyebrow">Selected Projects</p>
+        <p className="eyebrow">Selected Work</p>
 
         <h2>
-          Building technical confidence through AI, APIs, and practical projects.
+          Exploring Technical Support, AI Support Review, and Support
+          Operations through practical case studies.
         </h2>
 
         <p>
-          These projects reflect how I’m strengthening my technical foundation
-          through self-directed learning, debugging, API practice, and product thinking.
+          These case studies and learning projects show how I’m connecting my
+          text-based customer support experience with technical troubleshooting,
+          AI-assisted support, and workflow thinking.
         </p>
       </div>
 
-      <div className="project-container">
-        {projectData.map((data, index) => (
-          <div
-            className={`project-detail-container ${
-              index === 0 ? 'featured' : ''
-            }`}
-            key={index}
-          >
-            <ProjectCard data={data} />
-          </div>
-        ))}
+      <div className="work-section">
+        <div className="work-section-header">
+          <p className="eyebrow">Featured Case Studies</p>
+          <h3>Support, AI review, and workflow-focused case studies.</h3>
+        </div>
+
+        <div className="project-container">
+          {caseStudies.map((data, index) => (
+            <div
+              className={`project-detail-container ${
+                index === 0 ? 'featured' : ''
+              }`}
+              key={data.name}
+            >
+              <ProjectCard data={data} />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="work-section">
+        <div className="work-section-header">
+          <p className="eyebrow">Learning Projects</p>
+          <h3>
+            Technical learning projects in React, APIs, backend, and
+            JavaScript.
+          </h3>
+        </div>
+
+        <div className="project-container learning-projects">
+          {learningProjects.map((data) => (
+            <div className="project-detail-container" key={data.name}>
+              <ProjectCard data={data} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
