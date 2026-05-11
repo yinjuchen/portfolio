@@ -5,28 +5,33 @@ const Home = () => {
   return (
     <main className="home-container">
       <section className="hero-section">
-        <p className="eyebrow">Customer Experience · Technical Support · AI Learning</p>
+        <p className="eyebrow">
+          Customer Experience · Technical Support · AI Learning
+        </p>
 
         <h1>
-          Customer Support Specialist Moving into Technical Support, AI QA, and AI Support Operations.
+          From Customer Support to AI-Enabled Technical Support.
         </h1>
 
         <p className="hero-text">
-          7+ years in high-volume text-based support, with strengths in issue diagnosis, structured written communication, support quality, and AI-assisted workflow learning.
+          I’m a text-based Customer Support Specialist with 7+ years of experience,
+          now moving toward Technical Support, AI QA, and AI Support Operations.
         </p>
       </section>
 
       <section className="feature-card">
         <div className="card-content">
-          <h2>From support experience to technical problem-solving</h2>
+          <h2>
+            Turning support experience into practical case studies
+          </h2>
 
           <p>
-            Exploring how customer support, troubleshooting, product knowledge,
-            and AI tools can come together in customer-facing technical roles.
+            Explore how I apply customer support experience to issue diagnosis,
+            AI-assisted reply review, workflow thinking, and technical learning.
           </p>
 
-          <Link to="/about" className="card-link">
-            Learn more
+          <Link to="/projects" className="card-link">
+            View Case Studies
           </Link>
         </div>
 

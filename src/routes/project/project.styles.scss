@@ -43,6 +43,10 @@
   margin: 0 auto 96px;
 }
 
+.work-section:last-child {
+  margin-bottom: 0;
+}
+
 .work-section-header {
   margin-bottom: 32px;
 }
@@ -118,23 +122,50 @@
   grid-column: auto;
 }
 
-/* RESPONSIVE */
+/* TABLET / MOBILE */
 @media (max-width: 850px) {
   .projects {
     padding: 88px 6% 56px;
   }
 
   .projects-header {
+    max-width: 100%;
+    margin-bottom: 56px;
     text-align: left;
-    margin-bottom: 48px;
+  }
+
+  .projects-header .eyebrow,
+  .work-section-header .eyebrow {
+    margin-bottom: 18px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.12em;
+  }
+
+  .projects-header h2 {
+    font-size: clamp(2.8rem, 12vw, 4.3rem);
+    line-height: 0.95;
+    letter-spacing: -0.045em;
   }
 
   .projects-header p {
-    margin-left: 0;
+    max-width: 100%;
+    margin: 24px 0 0;
+    font-size: 1.03rem;
+    line-height: 1.65;
   }
 
   .work-section {
     margin-bottom: 72px;
+  }
+
+  .work-section-header {
+    margin-bottom: 28px;
+  }
+
+  .work-section-header h3 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1;
   }
 
   .project-container {
@@ -143,7 +174,7 @@
   }
 
   .project-detail-container.featured .project-card-container {
-    padding: 28px;
+    padding: 30px 26px;
   }
 
   .project-detail-container.featured .project-content {
@@ -151,15 +182,62 @@
   }
 
   .project-detail-container.featured .project-name {
-    font-size: clamp(2.6rem, 12vw, 4.2rem);
+    font-size: clamp(2.5rem, 11vw, 4rem);
+    line-height: 0.95;
   }
 
   .project-detail-container.featured .project-summary {
+    max-width: 100%;
     font-size: 1rem;
+    line-height: 1.65;
   }
 
   .project-detail-container.featured .project-image-wrapper {
     height: 260px;
     margin-bottom: 28px;
+  }
+
+  .project-detail-container:not(.featured) .project-name {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+    line-height: 1;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .projects {
+    padding: 80px 5.5% 48px;
+  }
+
+  .projects-header {
+    margin-bottom: 48px;
+  }
+
+  .projects-header h2 {
+    font-size: clamp(2.45rem, 11vw, 3.5rem);
+  }
+
+  .work-section {
+    margin-bottom: 60px;
+  }
+
+  .work-section-header h3 {
+    font-size: clamp(1.85rem, 8.5vw, 2.6rem);
+  }
+
+  .project-container {
+    gap: 20px;
+  }
+
+  .project-detail-container.featured .project-card-container {
+    padding: 26px 22px;
+  }
+
+  .project-detail-container.featured .project-name {
+    font-size: clamp(2.25rem, 10vw, 3.3rem);
+  }
+
+  .project-detail-container.featured .project-image-wrapper {
+    height: 220px;
   }
 }

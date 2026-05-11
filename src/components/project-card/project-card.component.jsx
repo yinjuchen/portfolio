@@ -6,6 +6,8 @@ const ProjectCard = ({ data }) => {
   const hasProjectLink = Boolean(data.projectLink)
   const hasSourceLink = Boolean(data.sourceLink)
   const isCaseStudy = data.status === 'Case Study'
+  const tools = data.tools || []
+  const highlights = data.highlights || []
 
   return (
     <article
@@ -19,13 +21,18 @@ const ProjectCard = ({ data }) => {
               className="project-image-link"
               target="_blank"
               rel="noreferrer"
+              aria-label={`Open live demo for ${data.name}`}
             >
               <img src={data.imageUrl} alt={data.name} />
             </a>
           )}
 
           {hasProjectLink && isCaseStudy && (
-            <Link to={data.projectLink} className="project-image-link">
+            <Link
+              to={data.projectLink}
+              className="project-image-link"
+              aria-label={`View case study for ${data.name}`}
+            >
               <img src={data.imageUrl} alt={data.name} />
             </Link>
           )}
@@ -41,39 +48,49 @@ const ProjectCard = ({ data }) => {
           <span className="status-badge inline-badge">{data.status}</span>
         )}
 
-        <p className="project-tag">{data.tag}</p>
+        {data.tag && <p className="project-tag">{data.tag}</p>}
 
         <h3 className="project-name">{data.name}</h3>
 
-        <p className="project-summary">{data.summary}</p>
+        {data.summary && <p className="project-summary">{data.summary}</p>}
 
-        <div className="tool-list">
-          {data.tools.map((tool) => (
-            <span className="tool" key={tool}>
-              {tool}
-            </span>
-          ))}
-        </div>
-
-        <div className="project-section">
-          <h4>Key highlights</h4>
-
-          <ul>
-            {data.highlights.map((highlight) => (
-              <li key={highlight}>{highlight}</li>
+        {tools.length > 0 && (
+          <div className="tool-list">
+            {tools.map((tool) => (
+              <span className="tool" key={tool}>
+                {tool}
+              </span>
             ))}
-          </ul>
-        </div>
+          </div>
+        )}
 
-        <div className="project-section">
-          <h4>What I learned</h4>
-          <p>{data.learned}</p>
-        </div>
+        {highlights.length > 0 && (
+          <div className="project-section">
+            <h4>Key highlights</h4>
+
+            <ul>
+              {highlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {data.learned && (
+          <div className="project-section">
+            <h4>What I learned</h4>
+            <p>{data.learned}</p>
+          </div>
+        )}
 
         {(hasProjectLink || hasSourceLink) && (
           <div className="project-link-container">
             {hasProjectLink && isCaseStudy && (
-              <Link to={data.projectLink} className="project-link">
+              <Link
+                to={data.projectLink}
+                className="project-link"
+                aria-label={`View case study for ${data.name}`}
+              >
                 View Case Study
               </Link>
             )}
@@ -84,6 +101,7 @@ const ProjectCard = ({ data }) => {
                 className="project-link"
                 target="_blank"
                 rel="noreferrer"
+                aria-label={`Open live demo for ${data.name}`}
               >
                 Live Demo
               </a>
@@ -95,6 +113,7 @@ const ProjectCard = ({ data }) => {
                 className="source-link"
                 target="_blank"
                 rel="noreferrer"
+                aria-label={`View source code for ${data.name}`}
               >
                 View Source
               </a>

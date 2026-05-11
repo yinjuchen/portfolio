@@ -29,29 +29,30 @@ const Projects = () => {
         'This project demonstrates how my text-based support experience can translate into structured issue diagnosis, product feedback, and support operations improvement.'
     },
     {
-      name: 'AI Support Response Review & Follow-up Handling',
+      name: 'AI Support Response Review',
       status: 'Case Study',
       imageUrl: null,
       projectLink: '/projects/ai-support-response-review',
       sourceLink: null,
-      tag: 'AI Support QA Case Study',
+      tag: 'AI QA Case Study',
       summary:
-        'A self-initiated case study reviewing sample AI-style support replies and writing human follow-up responses when the AI reply is unclear, incomplete, or not empathetic enough.',
+        'A self-initiated case study reviewing sample AI-assisted support replies and writing clearer human follow-up responses when the reply is unclear, incomplete, risky, or not empathetic enough.',
       tools: [
         'AI Reply Review',
+        'AI QA',
         'Customer Support',
         'Follow-up Writing',
         'Escalation Awareness',
         'Response QA'
       ],
       highlights: [
-        'Reviewed AI-style support replies across common customer scenarios',
-        'Identified unclear, incomplete, or risky AI responses',
-        'Wrote human follow-up replies to clarify, apologize, or escalate',
+        'Reviewed AI-assisted support replies across common customer scenarios',
+        'Identified unclear, incomplete, generic, or risky AI responses',
+        'Wrote human follow-up replies to clarify, acknowledge, or escalate',
         'Defined simple review criteria for AI-assisted support conversations'
       ],
       learned:
-        'This project shows how my text-based support experience can support AI-assisted customer service by reviewing AI replies and improving the customer follow-up experience.'
+        'This project shows how my text-based support experience can support AI QA work by reviewing AI-assisted support replies and improving the customer follow-up experience.'
     },
     {
       name: 'AI-Assisted Support Workflow Design',
@@ -99,7 +100,7 @@ const Projects = () => {
     },
     {
       name: 'Bookflow',
-      status: 'live',
+      status: 'Live',
       imageUrl: 'https://i.ibb.co/PMvXnYy/bookflow.webp',
       projectLink: 'https://bookflow-fbcg.onrender.com/',
       sourceLink: 'https://github.com/yinjuchen/bookflow.git',
@@ -167,21 +168,21 @@ const Projects = () => {
         <p className="eyebrow">Selected Work</p>
 
         <h2>
-          Exploring Technical Support, AI Support Review, and Support
-          Operations through practical case studies.
+          Practical case studies in Technical Support, AI QA, and Support
+          Operations.
         </h2>
 
         <p>
-          These case studies and learning projects show how I’m connecting my
-          text-based customer support experience with technical troubleshooting,
-          AI-assisted support, and workflow thinking.
+          These case studies show how I connect support experience with
+          troubleshooting, AI response review, workflow thinking, and technical
+          learning.
         </p>
       </div>
 
       <div className="work-section">
         <div className="work-section-header">
           <p className="eyebrow">Featured Case Studies</p>
-          <h3>Support, AI review, and workflow-focused case studies.</h3>
+          <h3>Support, AI QA, and workflow-focused case studies.</h3>
         </div>
 
         <div className="project-container">
@@ -200,10 +201,10 @@ const Projects = () => {
 
       <div className="work-section">
         <div className="work-section-header">
-          <p className="eyebrow">Learning Projects</p>
+          <p className="eyebrow">Technical Learning Projects</p>
           <h3>
-            Technical learning projects in React, APIs, backend, and
-            JavaScript.
+            Smaller projects showing technical learning in React, APIs, backend,
+            and JavaScript.
           </h3>
         </div>
 

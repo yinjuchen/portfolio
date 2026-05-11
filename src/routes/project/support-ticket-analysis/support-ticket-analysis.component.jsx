@@ -30,6 +30,37 @@ const SupportTicketAnalysis = () => {
         </p>
       </section>
 
+      <section className="case-study-section quick-summary">
+        <h2>Quick Summary</h2>
+
+        <p>
+          This case study demonstrates how I turn customer messages into
+          structured support insights and practical next steps.
+        </p>
+
+        <div className="summary-grid">
+          <article>
+            <h3>What it demonstrates</h3>
+            <ul>
+              <li>Ticket categorization</li>
+              <li>User intent analysis</li>
+              <li>Triage logic</li>
+              <li>Documentation and macro improvement</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Relevant roles</h3>
+            <ul>
+              <li>Technical Support</li>
+              <li>Product Support</li>
+              <li>Support Operations</li>
+              <li>AI Support Operations</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
       <section className="case-study-section">
         <h2>Overview</h2>
 
@@ -47,9 +78,8 @@ const SupportTicketAnalysis = () => {
         </p>
 
         <p>
-          This project reflects how I am translating my text-based customer
-          support experience into Technical Support, Product Support, and
-          Support Operations work.
+          This project shows how my support experience can translate into issue
+          triage, product support, and support operations work.
         </p>
       </section>
 
@@ -189,8 +219,8 @@ const SupportTicketAnalysis = () => {
         <h2>Triage Framework</h2>
 
         <p>
-          I used three questions to guide the triage process and decide the
-          next support action.
+          I used three questions to guide the triage process and decide the next
+          support action.
         </p>
 
         <div className="framework-grid">
@@ -205,8 +235,8 @@ const SupportTicketAnalysis = () => {
           <article>
             <h3>2. Check Urgency</h3>
             <p>
-              Determine whether the user is blocked or whether the issue
-              affects payment, access, data, or security.
+              Determine whether the user is blocked or whether the issue affects
+              payment, access, data, or security.
             </p>
           </article>
 
@@ -330,9 +360,7 @@ const SupportTicketAnalysis = () => {
             <li>
               Try resetting your password using the “Forgot password” link.
             </li>
-            <li>
-              Clear your browser cache or try using a different browser.
-            </li>
+            <li>Clear your browser cache or try using a different browser.</li>
             <li>
               If you still cannot log in, please send us a screenshot of the
               error message.
@@ -364,6 +392,13 @@ const SupportTicketAnalysis = () => {
           It also helped me clarify how my support background can transfer into
           Technical Support, Product Support, AI QA, and AI-assisted support
           operations.
+        </p>
+
+        <p>
+          Because this was a self-initiated case study using a small simulated
+          dataset, the next step would be to test the categories with more
+          ticket examples and refine the macros based on repeated issue
+          patterns.
         </p>
       </section>
     </main>

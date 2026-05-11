@@ -13,45 +13,69 @@ const LlmResponseEvaluation = () => {
       <section className="case-study-hero">
         <p className="eyebrow">AI Support QA Case Study</p>
 
-        <h1>AI Support Response Review & Follow-up Handling</h1>
+        <h1>AI Support Response Review</h1>
 
         <p className="case-study-summary">
-          A self-initiated case study reviewing sample AI-style support replies
-          and writing human follow-up responses when the AI reply is unclear,
-          incomplete, or not empathetic enough.
+          A self-initiated case study reviewing AI-assisted support replies and
+          writing clearer human follow-up responses.
         </p>
       </section>
 
       <section className="case-study-note">
         <p>
           This is a self-initiated case study using simulated customer support
-          scenarios and sample AI-style replies. The goal is to demonstrate how
-          I would review AI-assisted support responses from a customer support
-          perspective. No real customer, company, or confidential data was used.
+          scenarios and sample AI-assisted support replies. The goal is to
+          demonstrate how I would review AI-assisted support responses from a
+          customer support perspective. No real customer, company, or
+          confidential data was used.
         </p>
+      </section>
+
+      <section className="case-study-section quick-summary">
+        <h2>Quick Summary</h2>
+
+        <p>
+          This case study demonstrates how I review AI-assisted support replies
+          for clarity, empathy, context awareness, accuracy, risk, and escalation
+          needs.
+        </p>
+
+        <div className="summary-grid">
+          <article>
+            <h3>What it demonstrates</h3>
+            <ul>
+              <li>AI reply review</li>
+              <li>Response quality evaluation</li>
+              <li>Customer follow-up writing</li>
+              <li>Escalation judgment</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Relevant roles</h3>
+            <ul>
+              <li>AI QA</li>
+              <li>LLM Evaluator</li>
+              <li>Prompt Tester</li>
+              <li>AI Support Operations</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section className="case-study-section">
         <h2>Overview</h2>
 
         <p>
-          AI Support Response Review & Follow-up Handling is a case study
-          designed to show how a human support specialist can review AI-style
-          customer support replies and respond when the AI answer is incomplete,
-          unclear, or not appropriate for the customer’s situation.
+          AI Support Response Review is a self-initiated case study showing how
+          I review AI-assisted support replies from a customer support
+          perspective.
         </p>
 
         <p>
-          In an AI-assisted support workflow, an AI reply may answer part of the
-          question but still leave the customer confused, frustrated, or without
-          a clear next step. This project focuses on identifying those gaps and
-          writing better human follow-up responses.
-        </p>
-
-        <p>
-          This project connects my text-based customer support experience with
-          AI-assisted support, response QA, escalation awareness, and customer
-          follow-up handling.
+          The project focuses on identifying unclear, incomplete, generic, or
+          risky replies, then writing better human follow-up responses that
+          clarify the issue, acknowledge the customer, or escalate when needed.
         </p>
       </section>
 
@@ -59,16 +83,14 @@ const LlmResponseEvaluation = () => {
         <h2>Review Criteria</h2>
 
         <p>
-          I used six practical criteria to review whether an AI-style support
+          I used six practical criteria to review whether an AI-assisted support
           reply would be appropriate in a customer conversation.
         </p>
 
         <div className="criteria-grid">
           <article>
             <h3>Clarity</h3>
-            <p>
-              Does the reply clearly answer the customer’s actual question?
-            </p>
+            <p>Does the reply clearly answer the customer’s actual question?</p>
           </article>
 
           <article>
@@ -97,9 +119,7 @@ const LlmResponseEvaluation = () => {
 
           <article>
             <h3>Next Step</h3>
-            <p>
-              Does the customer know what to do next after reading the reply?
-            </p>
+            <p>Does the customer know what to do next after reading the reply?</p>
           </article>
 
           <article>
@@ -116,8 +136,8 @@ const LlmResponseEvaluation = () => {
         <h2>Sample AI Reply Review</h2>
 
         <p>
-          I reviewed several simulated AI-style support replies and identified
-          what kind of human follow-up would be needed.
+          I reviewed simulated AI-assisted support replies and identified what
+          kind of human follow-up would be needed.
         </p>
 
         <div className="table-wrapper">
@@ -170,19 +190,6 @@ const LlmResponseEvaluation = () => {
                   privacy process.
                 </td>
               </tr>
-
-              <tr>
-                <td>Bug Report</td>
-                <td>
-                  The AI acknowledged the issue but did not collect enough
-                  technical details for investigation.
-                </td>
-                <td>Issue unresolved</td>
-                <td>
-                  Ask for browser, device, screenshots, steps to reproduce,
-                  expected behavior, and actual behavior.
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -193,8 +200,8 @@ const LlmResponseEvaluation = () => {
 
         <p>
           I wrote human follow-up responses to show how I would clarify,
-          apologize, or escalate after an AI reply did not fully resolve the
-          customer’s issue.
+          acknowledge, or escalate after an AI-assisted support reply did not
+          fully resolve the customer’s issue.
         </p>
 
         <div className="response-example-list">
@@ -211,7 +218,7 @@ const LlmResponseEvaluation = () => {
             </div>
 
             <div className="response-block">
-              <h4>AI-style reply issue</h4>
+              <h4>AI Reply Issue</h4>
               <p>
                 The reply repeated the password reset instruction without
                 recognizing that the customer had already tried it.
@@ -241,7 +248,7 @@ const LlmResponseEvaluation = () => {
             </div>
 
             <div className="response-block">
-              <h4>AI-style reply issue</h4>
+              <h4>AI Reply Issue</h4>
               <p>
                 The reply was too generic and did not acknowledge the customer’s
                 frustration or explain that billing issues need account review.
@@ -269,7 +276,7 @@ const LlmResponseEvaluation = () => {
             </div>
 
             <div className="response-block">
-              <h4>AI-style reply issue</h4>
+              <h4>AI Reply Issue</h4>
               <p>
                 The reply promised immediate deletion, which may be inaccurate
                 or unsafe without identity verification and privacy review.
@@ -283,35 +290,6 @@ const LlmResponseEvaluation = () => {
                 identity verification and must follow the correct privacy
                 process. I can help route this request to the appropriate team
                 for review.
-              </p>
-            </div>
-          </article>
-
-          <article>
-            <p className="comparison-label">Scenario 4</p>
-            <h3>Bug report follow-up</h3>
-
-            <div className="response-block">
-              <h4>Customer follow-up</h4>
-              <p>The export button still does not work on Safari.</p>
-            </div>
-
-            <div className="response-block">
-              <h4>AI-style reply issue</h4>
-              <p>
-                The reply acknowledged the issue but did not ask for enough
-                information to help technical support investigate.
-              </p>
-            </div>
-
-            <div className="response-block">
-              <h4>Human follow-up response</h4>
-              <p>
-                Thanks for confirming. To help us investigate this further,
-                could you share your Safari version, device type, a screenshot
-                of the issue, and the steps you took before the export button
-                stopped working? This will help us understand whether the issue
-                is browser-specific or related to the export flow.
               </p>
             </div>
           </article>
@@ -342,7 +320,7 @@ const LlmResponseEvaluation = () => {
           <article>
             <h3>Some AI replies need risk correction.</h3>
             <p>
-              AI-style responses should avoid unsupported promises related to
+              AI-assisted replies should avoid unsupported promises related to
               refunds, data deletion, account status, or privacy-sensitive
               actions.
             </p>
@@ -364,7 +342,7 @@ const LlmResponseEvaluation = () => {
 
         <p>
           Based on the sample review, I created a simple checklist for when a
-          human support specialist should step in after an AI-style reply.
+          human support specialist should step in after an AI-assisted reply.
         </p>
 
         <div className="recommendation-grid">
@@ -416,17 +394,24 @@ const LlmResponseEvaluation = () => {
         </p>
 
         <p>
-          I practiced reviewing AI-style replies from the customer’s
+          I practiced reviewing AI-assisted support replies from the customer’s
           perspective, identifying where the reply was unclear, incomplete, too
           generic, or risky, and writing human follow-up responses to improve
           the conversation.
         </p>
 
         <p>
-          This project shows how I can support AI-assisted customer service by
-          reviewing AI replies, handling customer follow-ups, correcting
-          unclear responses, and knowing when a case should be escalated to a
-          human or specialized team.
+          This project shows how I can support AI QA work by reviewing
+          AI-assisted replies, handling customer follow-ups, correcting unclear
+          responses, and knowing when a case should be escalated to a human or
+          specialized team.
+        </p>
+
+        <p>
+          Because this was a self-initiated case study using simulated
+          scenarios, the next step would be to test the review criteria with
+          more AI-assisted reply examples and refine the checklist based on
+          repeated quality issues.
         </p>
       </section>
     </main>

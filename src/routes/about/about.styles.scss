@@ -5,13 +5,13 @@
   color: #171717;
 }
 
-/* HERO（改成無圖片版本） */
+/* HERO */
 .about-hero {
   max-width: 900px;
   margin: 0 auto 96px;
 }
 
-/* eyebrow */
+/* EYEBROW */
 .about-text .eyebrow,
 .cta-eyebrow {
   margin-bottom: 20px;
@@ -22,7 +22,7 @@
   color: #5f63ff;
 }
 
-/* 主標題（更穩） */
+/* MAIN HEADING */
 .about-text h1 {
   margin: 0 0 32px;
   font-family: Georgia, 'Times New Roman', serif;
@@ -31,7 +31,7 @@
   letter-spacing: -0.05em;
 }
 
-/* 內文 */
+/* BODY TEXT */
 .about-text p {
   max-width: 720px;
   margin: 0 0 22px;
@@ -40,12 +40,12 @@
   color: #333;
 }
 
-/* ❌ 移除圖片（關鍵） */
+/* IMAGE REMOVED */
 .about-image {
   display: none;
 }
 
-/* GRID */
+/* SKILLS GRID */
 .about-grid {
   max-width: 1180px;
   margin: 0 auto 72px;
@@ -64,6 +64,7 @@
   margin: 0 0 14px;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.5rem;
+  line-height: 1.1;
 }
 
 .card p {
@@ -72,7 +73,7 @@
   color: #333;
 }
 
-/* CTA（保持但微優化） */
+/* CTA */
 .about-cta {
   max-width: 1180px;
   margin: 0 auto;
@@ -100,31 +101,111 @@
   border: 1px solid #171717;
   border-radius: 999px;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .cta-note {
   margin: 28px 0 0;
   font-size: 1.05rem;
+  line-height: 1.6;
   color: #333;
 }
 
-/* RWD */
+/* TABLET */
 @media (max-width: 950px) {
   .about-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* MOBILE */
 @media (max-width: 650px) {
   .about-container {
     padding: 88px 6% 56px;
   }
 
+  .about-hero {
+    margin: 0 auto 64px;
+  }
+
+  .about-text .eyebrow,
+  .cta-eyebrow {
+    margin-bottom: 18px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.12em;
+  }
+
+  .about-text h1 {
+    margin-bottom: 26px;
+    font-size: clamp(2.8rem, 12vw, 4rem);
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+  }
+
+  .about-text p {
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.02rem;
+    line-height: 1.7;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 56px;
+  }
+
+  .card {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .card h3 {
+    font-size: 1.35rem;
   }
 
   .about-cta {
-    padding: 38px 28px;
+    padding: 34px 24px;
+    border-radius: 18px;
+  }
+
+  .cta-header h2 {
+    margin-bottom: 24px;
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 1;
+  }
+
+  .cta-role-list {
+    gap: 10px;
+  }
+
+  .cta-role-list span {
+    padding: 10px 14px;
+    font-size: 0.92rem;
+  }
+
+  .cta-note {
+    margin-top: 24px;
+    font-size: 1rem;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 80px 5.5% 48px;
+  }
+
+  .about-text h1 {
+    font-size: clamp(2.55rem, 11vw, 3.4rem);
+  }
+
+  .card {
+    padding: 22px;
+  }
+
+  .about-cta {
+    padding: 30px 22px;
   }
 }
