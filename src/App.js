@@ -1,4 +1,5 @@
-import { Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Navigation from './routes/navigation/navigation.component'
 import Home from './routes/home/home.component'
 import About from './routes/about/about.component'
@@ -7,30 +8,48 @@ import SupportTicketAnalysis from './routes/project/support-ticket-analysis/supp
 import LlmResponseEvaluation from './routes/project/llm-response-evaluation/llm-response-evaluation.component'
 import AiAssistedSupportWorkflow from './routes/project/ai-assisted-support-workflow/ai-assisted-support-workflow.component'
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    })
+  }, [pathname])
+
+  return null
+}
+
 const App = () => {
   return (
-    <Routes>
-      <Route path='/' element={<Navigation />}>
-        <Route index element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='projects' element={<Projects />} />
+    <>
+      <ScrollToTop />
 
-        <Route
-          path='projects/support-ticket-analysis'
-          element={<SupportTicketAnalysis />}
-        />
+      <Routes>
+        <Route path='/' element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='projects' element={<Projects />} />
 
-        <Route
-          path='projects/ai-support-response-review'
-          element={<LlmResponseEvaluation />}
-        />
+          <Route
+            path='projects/support-ticket-analysis'
+            element={<SupportTicketAnalysis />}
+          />
 
-        <Route
-          path='projects/ai-assisted-support-workflow'
-          element={<AiAssistedSupportWorkflow />}
-        />
-      </Route>
-    </Routes>
+          <Route
+            path='projects/ai-support-response-review'
+            element={<LlmResponseEvaluation />}
+          />
+
+          <Route
+            path='projects/ai-assisted-support-workflow'
+            element={<AiAssistedSupportWorkflow />}
+          />
+        </Route>
+      </Routes>
+    </>
   )
 }
 
