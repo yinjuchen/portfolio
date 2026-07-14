@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .DS_Store
+
+# personal interview prep notes (not a project deliverable)
+INTERVIEW_NOTES.md

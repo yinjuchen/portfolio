@@ -40,6 +40,34 @@
   height: 100%;
 }
 
+/* Used for case studies that don't have a screenshot — a simple icon instead
+   of leaving the card as plain text, so the grid stays scannable. */
+.project-visual {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  margin-bottom: 28px;
+  border-radius: 22px;
+  background: #eef4ea;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-visual-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+}
+
+.project-visual svg {
+  width: 96px;
+  height: 96px;
+}
+
 .status-badge {
   position: absolute;
   top: 18px;
@@ -121,6 +149,24 @@
   line-height: 1.1;
 }
 
+.details-toggle {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #5f63ff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.details-toggle:hover {
+  opacity: 0.75;
+}
+
 .project-section {
   margin-bottom: 24px;
 }
@@ -198,10 +244,17 @@
     border-radius: 24px;
   }
 
-  .project-image-wrapper {
+  .project-image-wrapper,
+  .project-visual {
     height: 220px;
     margin-bottom: 24px;
     border-radius: 20px;
+  }
+
+  .project-visual-link,
+  .project-visual svg {
+    width: 76px;
+    height: 76px;
   }
 
   .status-badge {
@@ -223,8 +276,8 @@
 
   .project-name {
     margin-bottom: 16px;
-    font-size: clamp(1.9rem, 9vw, 3rem);
-    line-height: 0.98;
+    font-size: clamp(1.5rem, 7vw, 1.9rem);
+    line-height: 1.05;
   }
 
   .project-summary {
@@ -279,13 +332,14 @@
     border-radius: 22px;
   }
 
-  .project-image-wrapper {
+  .project-image-wrapper,
+  .project-visual {
     height: 200px;
     margin-bottom: 22px;
   }
 
   .project-name {
-    font-size: clamp(1.75rem, 8.5vw, 2.6rem);
+    font-size: clamp(1.4rem, 7vw, 1.7rem);
   }
 
   .project-summary {

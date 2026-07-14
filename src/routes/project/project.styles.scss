@@ -105,9 +105,16 @@
   font-size: 1.1rem;
 }
 
-.project-detail-container.featured .project-image-wrapper {
+.project-detail-container.featured .project-image-wrapper,
+.project-detail-container.featured .project-visual {
   height: 420px;
   margin-bottom: 36px;
+}
+
+.project-detail-container.featured .project-visual-link,
+.project-detail-container.featured .project-visual svg {
+  width: 160px;
+  height: 160px;
 }
 
 /* REGULAR PROJECT CARDS */
@@ -141,9 +148,9 @@
   }
 
   .projects-header h2 {
-    font-size: clamp(2.8rem, 12vw, 4.3rem);
-    line-height: 0.95;
-    letter-spacing: -0.045em;
+    font-size: clamp(2.2rem, 9vw, 2.8rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
   }
 
   .projects-header p {
@@ -162,8 +169,8 @@
   }
 
   .work-section-header h3 {
-    font-size: clamp(2rem, 9vw, 3rem);
-    line-height: 1;
+    font-size: clamp(1.6rem, 7vw, 2rem);
+    line-height: 1.05;
   }
 
   .project-container {
@@ -180,8 +187,8 @@
   }
 
   .project-detail-container.featured .project-name {
-    font-size: clamp(2.5rem, 11vw, 4rem);
-    line-height: 0.95;
+    font-size: clamp(1.9rem, 8vw, 2.4rem);
+    line-height: 1;
   }
 
   .project-detail-container.featured .project-summary {
@@ -190,14 +197,21 @@
     line-height: 1.65;
   }
 
-  .project-detail-container.featured .project-image-wrapper {
+  .project-detail-container.featured .project-image-wrapper,
+  .project-detail-container.featured .project-visual {
     height: 260px;
     margin-bottom: 28px;
   }
 
+  .project-detail-container.featured .project-visual-link,
+  .project-detail-container.featured .project-visual svg {
+    width: 110px;
+    height: 110px;
+  }
+
   .project-detail-container:not(.featured) .project-name {
-    font-size: clamp(1.8rem, 8vw, 2.4rem);
-    line-height: 1;
+    font-size: clamp(1.5rem, 6.5vw, 1.9rem);
+    line-height: 1.05;
   }
 }
 
@@ -212,7 +226,7 @@
   }
 
   .projects-header h2 {
-    font-size: clamp(2.45rem, 11vw, 3.5rem);
+    font-size: clamp(1.9rem, 9vw, 2.4rem);
   }
 
   .work-section {
@@ -220,7 +234,7 @@
   }
 
   .work-section-header h3 {
-    font-size: clamp(1.85rem, 8.5vw, 2.6rem);
+    font-size: clamp(1.5rem, 7vw, 1.9rem);
   }
 
   .project-container {
@@ -232,10 +246,11 @@
   }
 
   .project-detail-container.featured .project-name {
-    font-size: clamp(2.25rem, 10vw, 3.3rem);
+    font-size: clamp(1.7rem, 8vw, 2.1rem);
   }
 
-  .project-detail-container.featured .project-image-wrapper {
+  .project-detail-container.featured .project-image-wrapper,
+  .project-detail-container.featured .project-visual {
     height: 220px;
   }
 }

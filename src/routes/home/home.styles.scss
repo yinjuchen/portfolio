@@ -139,9 +139,9 @@
   }
 
   .hero-section h1 {
-    font-size: clamp(3.2rem, 14vw, 4.8rem);
-    line-height: 0.92;
-    letter-spacing: -0.05em;
+    font-size: clamp(2.4rem, 9vw, 3.2rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
   }
 
   .hero-text {
@@ -159,8 +159,8 @@
   }
 
   .card-content h2 {
-    font-size: clamp(2rem, 10vw, 3rem);
-    line-height: 1;
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+    line-height: 1.05;
   }
 
   .card-content p {
@@ -208,11 +208,15 @@
   }
 
   .hero-section h1 {
-    font-size: clamp(2.8rem, 13vw, 3.8rem);
+    font-size: clamp(2rem, 9vw, 2.6rem);
   }
 
   .feature-card {
     padding: 28px 22px;
+  }
+
+  .card-content h2 {
+    font-size: clamp(1.4rem, 7.5vw, 1.8rem);
   }
 
   .card-visual {

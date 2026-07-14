@@ -39,6 +39,16 @@ const Navigation = () => {
           <Link className="nav-link" to="/projects" onClick={closeMenu}>
             Work
           </Link>
+
+          <a
+            className="nav-link resume-link"
+            href="/Resume_ChenYinJu.pdf"
+            target="_blank"
+            rel="noreferrer"
+            onClick={closeMenu}
+          >
+            Resume
+          </a>
         </div>
       </nav>
 
